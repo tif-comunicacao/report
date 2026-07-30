@@ -208,7 +208,7 @@
 
   <div class="masthead">
     <p class="eyebrow">Marista · Mídia de Performance</p>
-    <h1>Painel de Reports</h1>
+    <h1>Central de Reports</h1>
     <p>Todos os relatórios semanais e mensais de investimento, leads e matrículas, organizados por período. Clique em qualquer item para abrir o report completo.</p>
   </div>
 
@@ -218,7 +218,7 @@
 
   <div id="sections"></div>
 
-  <footer>Arquivo mantido pela equipe de mídia · atualizado conforme novos relatórios são publicados.</footer>
+  <footer>Gerado automaticamente a partir da lista de reports abaixo no código-fonte desta página.</footer>
 </div>
 
 <script>
@@ -226,11 +226,19 @@
 const REPORTS = [
   {
     tipo: "semanal",
+    titulo: "01 a 29 de julho de 2026",
+    periodo: "" ,
+    arquivo: "semanal_01_07_29_07.html",
+    data: "2026-07-07",
+    latest: true
+  },
+    {
+    tipo: "semanal",
     titulo: "01 a 22 de julho de 2026",
     periodo: "" ,
     arquivo: "semanal_01_07_22_07.html",
     data: "2026-07-07",
-    latest: true
+    latest: false
   },
   {
     tipo: "mensal",
@@ -241,7 +249,7 @@ const REPORTS = [
     latest: false
   }
 
-  
+  // ↓↓↓ Adicione os próximos reports aqui, seguindo o mesmo formato ↓↓↓
 
 ];
 /* ===================================================================== */
