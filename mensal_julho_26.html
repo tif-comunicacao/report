@@ -682,7 +682,7 @@
 <p>Este relatório passa a acompanhar também os leads gerados por conversas iniciadas via WhatsApp em campanhas do Meta, um contador separado dos leads por formulário e sem sobreposição com eles. No mês, essas conversas somam 149 leads, concentrados em Alexander Fleming, 51, Natal, 50, e Ipanema, 48. Não há base de comparação em 2025, já que a métrica não era acompanhada até então.</p>
 
 <h4>Canais</h4>
-<p>O Google concentra R$ 291.386 do investimento, 82,1% do total, com CTR de 3,71% e a maior parte dos leads por formulário do mês, 304 dos 308, 46,9% abaixo do ano anterior. O canal também é a fonte da nova taxa de 1ª posição absoluta em campanhas Search, que aparece com maior participação em unidades de menor volume, como Presidente Prudente e Assunção, e é diluída nas unidades de maior investimento, dominadas por campanhas de Display e Performance Max. O Meta investiu R$ 48.464, rodando a 103,4% do plano, com CTR mais baixo, 1,06%, e apenas 4 leads por formulário, 95,1% abaixo do ano anterior, mas concentra os 149 leads via WhatsApp já mencionados. O TikTok aparece em 10 unidades da base, com R$ 15.285 investidos, 97,3% do plano, e ainda não gerou nenhum lead no período.</p>
+<p>O Google concentra R$ 291.386 do investimento, 82,1% do total, com CTR de 3,71% e a maior parte dos leads por formulário do mês, 304 dos 308, 46,9% abaixo do ano anterior. O Meta investiu R$ 48.464, rodando a 103,4% do plano, com CTR mais baixo, 1,06%, e apenas 4 leads por formulário, 95,1% abaixo do ano anterior, mas concentra os 149 leads via WhatsApp já mencionados. O TikTok aparece em 10 unidades da base, com R$ 15.285 investidos, 97,3% do plano, e ainda não gerou nenhum lead no período.</p>
 
 <h4>Recomendação</h4>
 <p>O investimento roda acima do plano e do ano anterior, mas a conversão em leads por formulário não acompanha o mesmo ritmo, o que aponta para um gargalo entre o clique e a captação, não na entrada de tráfego. O WhatsApp já responde por 149 leads concentrados em três unidades, um volume relevante que merece ganhar peso na leitura mensal ao lado dos leads por formulário. Vale revisar páginas de destino e formulários das unidades com maior tráfego e CPL mais alto, como Asa Sul e Londrina, e usar unidades com boa conversão em volume, como São José - Tijuca e Goiânia, como referência de funil eficiente para o restante da base.</p>
@@ -762,7 +762,7 @@
             <tr>
               <th class="sticky-col">Unidade</th><th>Cluster</th><th>Canal</th>
               <th>Invest. Real</th><th>Aderência</th>
-              <th>Impressões</th><th>Clicks</th><th>CTR</th><th>1ª Posição</th>
+              <th>Impressões</th><th>Clicks</th><th>CTR</th>
               <th>Alcance</th><th>Frequência</th>
               <th>Sessões</th><th>Leads</th><th>WhatsApp</th><th>Tx. Conv.</th><th>Matrículas</th><th>CPL</th>
             </tr>
@@ -799,9 +799,6 @@
 
 <h4>Alcance e frequência por unidade (Meta)</h4>
 <p>Nas unidades com campanha ativa no Meta, o alcance e a frequência aparecem lado a lado com sua variação YoY na tabela, mas valem só para esse canal. Google e TikTok mostram "n/a" nessas duas colunas: o indicador foi desenhado para o Meta e mantém essa referência única, mesmo em meses em que outro canal também reporte alcance na base.</p>
-
-<h4>Taxa de 1ª posição no Search (Google)</h4>
-<p>A nova coluna "1ª Posição" mostra a taxa de impressão em posição absoluta de topo nas campanhas Search do Google, disponível só para esse canal. As unidades com maior participação são Presidente Prudente, 32,3%, Assunção, 23,5%, e Penha, 13,3%, todas com volume de impressão relativamente baixo. Nas unidades de maior investimento, dominadas por campanhas de Display e Performance Max, a participação em 1ª posição de Search aparece bem mais diluída, já que a métrica reflete só a fração de impressão vinda de campanhas Search.</p>
 
 <h4>Recomendação</h4>
 <p>Acompanhar de perto Asa Sul e Natal, que reúnem volume alto de investimento e tráfego sem conversão proporcional em leads por formulário. São José - Tijuca e Goiânia podem servir de referência de funil eficiente, com CPL bem abaixo da média mesmo em unidades de investimento intermediário. Vale também monitorar se a concentração de leads via WhatsApp em Alexander Fleming, Natal e Ipanema se repete nos próximos meses, já que pode indicar um canal de conversão relevante fora do formulário tradicional.</p>
@@ -1246,7 +1243,6 @@ new Chart(document.getElementById('chart-cluster-aderencia'), {
         ${cell(fmtInt(u.imprReal), u.varImprYoY)}
         ${cell(fmtInt(u.clicksReal), u.varClicksYoY)}
         ${cell(fmtPct(u.ctr, 2), u.varCtrYoY)}
-        ${u.canal === 'GOOGLE' ? cell(fmtPct(u.searchTopISReal, 1), u.varSearchTopISYoY) : `<td><div class="cell-main"><span class="na">n/a</span></div></td>`}
         ${u.canal === 'META' ? cell(fmtInt(u.reachReal), u.varReachYoY) : `<td><div class="cell-main"><span class="na">n/a</span></div></td>`}
         ${u.canal === 'META' ? cell(fmtDec(u.freqReal, 2), u.varFreqYoY) : `<td><div class="cell-main"><span class="na">n/a</span></div></td>`}
         ${cell(fmtInt(u.sessReal), u.varSessYoY)}
